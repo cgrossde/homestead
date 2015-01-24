@@ -1,5 +1,5 @@
 {
-    "name": "cgross/homestead",
+    "name": "cgross/homesteadfork",
     "description": "A virtual machine for web artisans.",
     "require": {
         "php": ">=5.4",
