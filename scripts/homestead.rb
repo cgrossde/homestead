@@ -1,7 +1,7 @@
 class Homestead
   def Homestead.configure(config, settings)
     # Configure The Box
-    config.vm.box = "laravel/homestead"
+    config.vm.box = "cgrossde/homesteadfork"
     config.vm.hostname = "homestead"
 
     # Configure A Private Network IP
@@ -22,6 +22,7 @@ class Homestead
     config.vm.network "forwarded_port", guest: 443, host: 44300
     config.vm.network "forwarded_port", guest: 3306, host: 33060
     config.vm.network "forwarded_port", guest: 5432, host: 54320
+    config.vm.network "forwarded_port", guest: 1080, host: 10800
 
     # Add Custom Ports From Configuration
     if settings.has_key?("ports")
