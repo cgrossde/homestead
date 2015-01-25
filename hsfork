@@ -2,7 +2,7 @@
 <?php
 
 $_ENV['HOME'] = getenv('HOME');
-$_ENV['VAGRANT_DOTFILE_PATH'] = homestead_path().DIRECTORY_SEPARATOR.'.vagrant';
+$_ENV['VAGRANT_DOTFILE_PATH'] = homestead_path().DIRECTORY_SEPARATOR.'.vagrantHsfork';
 
 if (file_exists(__DIR__.'/vendor/autoload.php'))
 {
@@ -25,7 +25,7 @@ function homestead_path()
 	}
 }
 
-$app = new Symfony\Component\Console\Application('Laravel Hsfork', '2.2.1');
+$app = new Symfony\Component\Console\Application('Laravel Hsfork', '2.2.2');
 
 $app->add(new Laravel\Hsfork\DestroyCommand);
 $app->add(new Laravel\Hsfork\EditCommand);
