@@ -24,4 +24,4 @@ To use this box you need my fork of [homestead](https://github.com/cgrossde/home
 composer global require "cgross/homesteadfork=~2.1"
 ```
 
-The rest of the install is equivalent with the [Laravel documentation](http://laravel.com/docs/4.2/homestead) about homestead. So just take a look there.
+After that you will have the `hsfork` command. The rest of the install is equivalent with the [Laravel documentation](http://laravel.com/docs/4.2/homestead) about homestead. Just replace every `homestead` command with the `hsfork` command. I renamed it to `hsfork` so you can run them in parallel.
