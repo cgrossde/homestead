@@ -3,6 +3,7 @@
 Major changes are:
  * [Mailcatcher](http://mailcatcher.me) to catch and view mails sent by server
  * ZSH shell with [grml-zsh-config](http://grml.org/zsh/)
+ * PhpMyAdmin on port 1085 / 10850
  * Minor tweaks and aliases for artisan and behat
 
 For more info or feature requests look here: https://github.com/cgrossde/settler
@@ -24,4 +25,4 @@ To use this box you need my fork of [homestead](https://github.com/cgrossde/home
 composer global require "cgross/homesteadfork=~2.2"
 ```
 
-After that you will have the `hsfork` command. The rest of the install is equivalent with the [Laravel documentation](http://laravel.com/docs/4.2/homestead) about homestead. Just replace every `homestead` command with the `hsfork` command. I renamed it to `hsfork` so you can run them in parallel.
+After that you will have the `hsfork` command. The rest of the install is equivalent with the [Laravel documentation](http://laravel.com/docs/4.2/homestead) about homestead. Just replace every `homestead` command with the `hsfork` command. I renamed it to `hsfork` so you can install homestead and my fork in parallel but you won't be able to run both machines at the same time since they use the same ports.

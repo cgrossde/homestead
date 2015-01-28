@@ -23,6 +23,7 @@ class Homestead
     config.vm.network "forwarded_port", guest: 3306, host: 33060
     config.vm.network "forwarded_port", guest: 5432, host: 54320
     config.vm.network "forwarded_port", guest: 1080, host: 10800
+    config.vm.network "forwarded_port", guest: 1085, host: 10850
 
     # Add Custom Ports From Configuration
     if settings.has_key?("ports")
